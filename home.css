@@ -1,0 +1,686 @@
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+  --color-goud: #b89723;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+p {
+  
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300; 
+    font-style: normal;
+  
+
+}
+
+
+
+
+.menu-bar {
+  background-color: var(--color-black-1);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  margin-top: 30px;
+}
+
+.menu-bar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: #b89723;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black-1);
+  text-align: center;
+  align-items: center;
+  
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 5px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 130px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black-1);
+}
+
+.Doneerknop {
+  background-color: var(--color-goud);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-top: -7px;
+}
+
+
+
+
+
+.Doneerknop:hover {
+  background-color: var(--color-goud);
+  color: var(--color-white);
+  box-shadow: 2px 2px #b89723;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  
+}
+
+.bar {
+  display: block;
+  width: 40px;
+  height: 6px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-white);
+  border-radius: 20px;
+}
+
+.container-body > * {
+  .container-body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    
+    /* Add these lines to center the content */
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.container-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: lightgray;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.26);
+  
+}
+
+.hadithPost1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-areas: 
+  "fotoMoskee hadith hadith hadith"
+  ;
+  grid-template-columns: span 2;
+  padding: 10px; /* Add space between blog posts */
+  justify-items: center;
+
+ 
+
+}
+
+.hadithText{
+   padding: 10px; /* Add space between blog posts */
+  padding-top: 50px;
+  grid-area: hadith;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+
+  
+}
+
+#Hadithfoto1{
+
+  max-width: fit-content;
+   height: 300px;
+  align-self: center;
+  grid-area: fotoMoskee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.knop-1 {
+  background-color: var(--color-black-1);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-top: -7px;
+  text-decoration: none;
+  box-decoration-break: none;
+  text-decoration: none;
+  box-decoration-break: none;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+
+  
+  
+}
+
+.knop-2 {
+  background-color: var(--color-goud);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-top: -7px;
+  text-decoration: none;
+  box-decoration-break: none;
+  text-decoration: none;
+  box-decoration-break: none;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+}
+
+.NieuwemoskeeDoneernu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  /*grid-row-start: 2;
+  /*grid-column-start: 3;
+ /* align-self: end;
+  padding: px; /* Add space between blog posts */
+}
+
+
+
+
+.hadithText p span {
+
+  font-weight: 600;
+}
+
+.hadithText h2{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+  box-decoration-break: none;
+  text-decoration: none;
+
+}
+
+.blog-post2{
+  display: flex;
+  grid-column-start: 3;
+  margin-bottom: 20px;
+  padding: 10px; /* Add space between blog posts */
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-content {
+  flex: 4;
+  margin-right: 20px;
+  padding: 20px; /* Add space between the text and the image */
+}
+
+.text-content button {
+  display: block;
+  margin-top: 20px; /* Add space between the text and the button */
+}
+
+.blog-post img {
+  flex: 1;
+}
+
+
+
+
+.herosection{
+  background-color: antiquewhite;
+}
+
+
+
+
+
+@media(max-width: 1300px) {
+
+  
+
+  .carouseltextcontainer {
+    display: flex;
+    margin-top: 20px;
+    height: 100%;
+    text-align: left;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+  }
+
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+    padding-top: 60px;
+  }
+
+
+  .logo{
+    display: block;
+    height: 200px;
+    margin: 5px;
+    top: 0.75rem;
+    margin-left: 40px;
+  }
+  
+  
+  .carousel{
+    z-index: 1000;
+  }
+
+  .header-section{
+    width: 100%;
+  }
+
+
+  .menu-bar {
+    
+    top: 0rem;
+    width: 100%;
+    background-color: #212b38;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.7s;
+    z-index: 1001;
+  }
+
+    .menu-bar ul {
+      display: none;
+    }
+
+    .menu-bar ul li {
+      padding: 10px 0;
+    }
+
+    .dropdown-menu {
+      display: none; /* Hide by default */
+      position: absolute; /* Position absolutely within the parent menu item */
+      left: 0; /* Align to the left of the parent menu item */
+      top: 100%; /* Position below the parent menu item */
+      /* Add additional styles as needed */
+  }
+
+
+  .menu-bar.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 50px;
+  }
+
+   
+    .menu-bar.active ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+    .menu-bar.active ul li {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /* other styles */
+  
+
+    .hamburger {
+    display: block;
+    align-items: center;
+    position: absolute;
+    top: 1.7rem;
+    right: 20px;
+    z-index: 9999;
+    border-radius: 20px;
+}
+
+.logo.active{
+  display: block;
+    height: 1px;
+    margin: 5px;
+    top: 10rem;
+    margin-left: 150px;
+    
+    
+
+}
+
+
+
+.logoimage{
+  display: block;
+    height: 200px;
+    margin: 5px;
+
+    top: 0.50rem;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    
+    
+}
+
+h1{
+  font-size: 30px;
+  margin-left: 150px;
+
+}
+
+.container-body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr ;
+  grid-template-areas: 
+  "fotoMoskee"
+  "hadith"
+  "NieuwemoskeeDoneernu";
+  gap: 20px;
+   border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.26);
+  align-items: center;
+}
+
+
+
+.hadithText{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid: span 2;
+  grid-row-start: 2;
+  padding: 10px; /* Add space between blog posts */
+  padding-top: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+
+
+
+
+}
+
+
+.logoimage {
+  display: block;
+  height: 70px;
+  margin: 30px;
+  margin-top: 40px;
+}
+
+.footer * {
+  box-sizing: border-box;
+}
+.footer {
+  padding: 70px 0 0;
+  background-color: var(--color-black-1);
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1em;
+}
+.footer .cont {
+  max-width: 1170px;
+  margin: auto;
+}
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  color: rgb(255, 255, 255, 1);
+}
+.footer .row > div:nth-child(1) {
+  width: 35%;
+}
+.footer .row > div {
+  width: 20%;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.footer .row p {
+  margin: 20px 0;
+  color: rgb(255, 255, 255, 0.8);
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+
+.footer .row h4 {
+  background-color: var(--color-goud);
+  color: white;
+  width: fit-content;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.footer .row ul,
+.footer .row li {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 15px 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.footer .row li {
+  transform: translateX(-15px);
+}
+.footer .row li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 8px solid var(--color-goud);
+  border-bottom: 5px solid transparent;
+}
+.footer .row li:hover {
+  transform: translateX(0);
+}
+.footer .row ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.8);
+  margin-left: 15px;
+}
+
+.footer .row .socialButton {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 30px;
+}
+.footer .row .socialButton i {
+  font-size: 1.9em;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+  opacity: 0.5;
+  transform: translateY(0);
+}
+.footer .row .socialButton i:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+.footer .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  height: 80px;
+  background-color: rgb(10, 10, 10);
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 0.8em;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1170px) {
+  .footer .row > div {
+    width: 50% !important;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .footer .row > div {
+    width: 100% !important;
+  }
+}
